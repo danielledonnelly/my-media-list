@@ -1,5 +1,172 @@
-table {
+/* This is what makes the scrollbar on the side dark */
+/* I may get rid of the scrollbar all-together in the future */
+:root {
+  color-scheme: dark;
+  background-color: #313439 !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #313439 !important;
+  color: #fff!important;
+}
+
+.banner {
+  width: 100%;
+  max-width: 700px; 
+  margin: 0 auto; 
+  align-self: center;
+}
+    
+p {
+  font-size: medium;
+  font-weight: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+  margin: auto;
+}
+
+thead th {
+  text-align: center;
+}
+
+/* This centers the score buttons */
+td:nth-child(2) {
+  text-align: center;
+}
+
+div {
+  width: 100%;
+}
+
+/* The transparent class is here for if I add any placeholder fields */
+.transparent { 
+  background-color: transparent !important;
+  border-color: transparent !important;
+  text-align: center;
+}
+
+.dropdown-menu{
+  background-color: #313439 !important;
+  align-items: center !important;
+  max-width: 160px !important;
+}
+
+.dropdown-item{
   width: 100% !important;
-  padding: 3% !important;
-  align-content: center !important;
+  align-items: center !important;
+  max-width: 160px !important;
+}
+
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
+/* Header CSS */
+header {
+  background-color: #313439;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 150px;
+  color: white;
+  font-size: 20px; 
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.logo:hover {
+color: #ccc; /* Change the color on hover */
+}
+
+li{
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+li:hover {
+  color: #ccc; /* Change the color on hover */
+  }
+
+.subtitle {
+  font-size: 16px;
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+nav ul {
+  font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Updated */
+  align-items: center; /* Added */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remove left margin for the first child */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Adjusting hover effect */
+nav ul li a:hover {
+  color: #ccc; /* Change the color on hover */
+  text-decoration: none; /* Remove the underline on hover */
+}
+
+footer {
+  background-color: #2d2f32;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+span {
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color:#30363c !important;
+  border-color: rgb(88, 88, 88) !important;
+}
+
+.btn-secondary:hover {
+  background-color: #434a50 !important; /* Adjust the background color on hover */
+}
+
+#about-section {
+  display: none;
+  margin: 0 auto; /* Center the about section horizontally */
+  max-width: 1300px; /* Set a maximum width to limit the width of the about section */
+  text-align: center;
+  text-align: justify; /* Justify the text to ensure straight lines on both ends */
+}
+
+#about-section p {
+  font-size: 14px !important;
 }
