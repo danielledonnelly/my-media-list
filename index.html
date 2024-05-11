@@ -1,203 +1,169 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <!-- Open graph tags-->
-    <meta property="og:title" content="Danielle's Top 10 Games">
-    <meta property="og:description" content="This is a static demo project created to showcase what can be created with the Media Masterlist website."/> 
-    <meta property="og:type" content="website"> 
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Danielle's Top 10 Games</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="script.js">
+  
+  <!-- Open graph tags-->
+  <meta property="og:title" content="Media Masterlist">
+  <meta property="og:description" content="Media Masterlist is the ultimate destination for reviewing and ranking your favourite media!"/> 
+  <meta property="og:type" content="website"> 
+  <meta property="og:image" content="images\media-masterlist.png"> 
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Danielle's Top 10 Games</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
-    <!-- This is the header at the top of the screen -->
-    <header>
-        <b>Danielle's Top 10 Games</b> &nbsp &nbsp This is a static demo project I created based on my favourite games. Check the Media Masterlist <a href="https://danielledonnelly.github.io/media-masterlist-project">site</a> to make a list of your own.
-    </header>
-    <div class="tbl-container bdr">
-        <table id="media-table" class="table table-hover table-dark">
-            <thead>
-                <tr class="thead">
-                    <th scope="col">Title</th>
-                    <th scope="col">Score</th>
-                    <th scope="col">Platform</th>
-                    <th scope="col">Genre</th>
-                    <th scope="col">Status</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <!-- This is the table body -->
-            <!-- Each <tr> is a row, and each <td> is an individual cell.  -->
-            <tbody id="media-table-body">
-                <tr>
-                    <td scope="row">Dicey Dungeons<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    Nintendo Switch
-                    </td>
-                    <td>Indie Deckbuilder</td>
-                    <td>
-                    Completed
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
+  <!-- JavaScript link -->
+  <script src="script.js"></script>
+  <!--This is the header at the top of the screen-->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" onclick="window.location.reload()">Danielle's Top 10 Games</a>
+    </div>
+    <span class="subtitle">This is a static demo project I created based on my favourite games. Check out <a class="light-link" href="https://danielledonnelly.github.io/media-masterlist-project/">Media Masterlist</a> to make a list of your own.</span>
+  </div>
+  </header>
 
-                <tr>
-                    <td scope="row">Genshin Impact<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    <td>
-                    PS5
-                    </td>
-                    <td>Gacha RPG</td>
-                    <td>
-                    Currently playing
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                <tr>
+<main>
+  <div class="tbl-container table-container bdr">
+    <table id="media-table" class="table table-hover table-dark">
+      <!-- This is the table head, which contains editable headers -->
+      <thead>
+        <tr class="thead">
+          <th scope="col" contenteditable>Title</th>
+          <th scope="col" contenteditable>Score</th>
+          <th scope="col" contenteditable>Platform</th>
+          <th scope="col" contenteditable>Genre</th>
+          <th scope="col" contenteditable>Review</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
 
-                <tr>
-                    <td scope="row">Nintendogs<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    Nintendo
-                    </td>
-                    <td>Simulation</td>
-                    <td>
-                    Completed
-                    </td>
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <tr>
-                    <td scope="row">Butterfly Soup<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    PC
-                    </td>
-                    <td>Visual Novel</td>
-                    <td>
-                        Completed
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <!-- Additonal rows go here -->
-
-                <tr>
-                    <td scope="row">Stardew Valley<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    PC
-                    </td>
-                    <td>Farming Sim</td>
-                    <td>
-                        Currently replaying
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <tr>
-                    <td scope="row">Life is Strange<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    PS4
-                    </td>
-                    <td>Narrative Adventure</td>
-                    <td>
-                        Completed
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <tr>
-                    <td scope="row">Atelier Sophie: Alchemist of the Mysterious Book<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    PS4
-                    </td>
-                    <td>JRPG</td>
-                    <td>
-                        Completed
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <tr>
-                    <td scope="row">Life is Strange: True Colors<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    PS5
-                    </td>
-                    <td>Narrative Adventure</td>
-                    <td>
-                        Completed
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <tr>
-                    <td scope="row">Saints Row: the Third<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    PS4
-                    </td>
-                    <td>Action Adventure</td>
-                    <td>
-                        Completed
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-
-                <tr>
-                    <td scope="row">MySims Kingdom<td>
-                    <div class="dropdown">
-                        <button>⭐⭐⭐⭐⭐</button>
-                    </div>
-                    </div>
-                    <td>
-                    Wii
-                    </td>
-                    <td>Simulation</td>
-                    <td>
-                        Completed</td>
-                    <td><button class="delete fa fa-trash-o" style="font-size:24px"><i id="trash"></i></button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>  
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Media Masterlist. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      <!-- This is the table body -->
+      <!-- Each <tr> is a row, and each <td> is an individual cell  -->
+      <tbody id="media-table-body">
+        <tr>
+          <td contenteditable scope="row">Genshin Impact<td>
+          <div class="dropdown">
+           ⭐⭐⭐⭐⭐
+            </div>
+          </div>
+          <td contenteditable>PS5</td>
+          <td contenteditable>Gacha RPG</td>
+          <td contenteditable>Whether you're looking to enjoy fast-paced combat, stylish home-decorating, or some leisurely fishing, Genshin Impact has it all.</td>
+          <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+        </tr>
+        <tr>
+            <td contenteditable scope="row">Dicey Dungeons<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>Nintendo Switch</td>
+                <td contenteditable>Indie Deckbuilder</td>
+                <td contenteditable>This roguelike is cute, fun, and downright addictive. It's an indie title that offers a uniquely sleek and satisfying gameplay experience.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">Life is Strange<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>Xbox 360</td>
+                <td contenteditable>Narrative Adventure</td>
+                <td contenteditable>Despite some questionable writing decisions at times, Life is Strange is a great coming-of-age story with a unique supernatural twist.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">Life is Strange: True Colors<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>PS5</td>
+                <td contenteditable>Narrative Adventure</td>
+                <td contenteditable>Life is Strange: True Colors is a perfect sequel to its predecessor. It masterfully recreates the cozy feeling of the first game with some notable improvements.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">Butterfly Soup<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>PC</td>
+                <td contenteditable>Visual Novel</td>
+                <td contenteditable>Although it may seem light-hearted at first, Butterfly Soup is a profound sapphic love story that manages to be both heartbreaking and heartwarming.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">Stardew Valley<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>PC</td>
+                <td contenteditable>Farming Simulation</td>
+                <td contenteditable>Stardew Valley is a cozy farming sim with art, music, code, and more ALL crafted by a genius one-man team. It's an inspiring and memorable game for all ages.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">Nintendogs<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>Nintendo DS</td>
+                <td contenteditable>Pet Simulation</td>
+                <td contenteditable>A staple for kids growing up in the 2000s, Nintendogs was ahead of its time. Modern pet sims created almost 20 years later don't hold a candle to this classic title.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">MySims Kingdom<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>Wii</td>
+                <td contenteditable>Simulation</td>
+                <td contenteditable>The MySims series is wonderfully cute and funny. While EA is currently preoccupied with their Sims series, some fans (me) still hope that it's cuter counterpart will one day be rebooted.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+          <tr>
+            <td contenteditable scope="row">Atelier Sophie: Alchemist of the Mysterious Book<td>
+                <div class="dropdown">
+                 ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+                <td contenteditable>PS5</td>
+                <td contenteditable>JRPG</td>
+                <td contenteditable>Follow the enchanting story of Sophie, an aspiring alchemist, as she fights monsters, makes friends, and sells magical items at her atelier.</td>
+                <td><button class="delete fa fa-trash-o" type="button"><i id="trash"></i></button></td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+  <!-- The lines above mark the end of the table and table container div -->
+  
+<!-- The lines below are table buttons for various functions -->
+</main>
+<footer>
+  <div>
+      <p>&copy; 2024 Media Masterlist. All rights reserved.
+      <br>This project was created by <a class="light-link" href="https://github.com/danielledonnelly">Danielle Donnelly.</a></p>
+  </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 </body>
 </html>
