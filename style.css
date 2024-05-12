@@ -351,4 +351,9 @@ li {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .dropdown-item{
+    font-size: 12px !important;
+    overflow-x: visible !important;
+  }
 }
